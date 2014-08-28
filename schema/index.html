@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NuGet Schema Documentation</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css"
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a href="/" class="navbar-brand">NuGet Schema Browser</a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/schema">Core</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>NuGet Core Schema</h1>
+    <p>This site describes the Core NuGet Schema<p>
+
+    <h2><a name="id"/>id</h2>
+    <p>Specifies the unique id of the package within a particular gallery</p>
+
+    <h2><a name="version" />version</h2>
+    <p>Type: <a href="http://schema.nuget.org/schema#SemanticVersion">nuget:SemanticVersion</a>
+    <p>Specifies the version of a package</p>
+
+    <h2><a name="SemanticVersion" />SemanticVersion</h2>
+    <p>A SemanticVersion, as specified by <a href="http://semver.org/">semver.org</a>, with the addition of an <strong>OPTIONAL</strong> fourth numeric component. For example: 1.0.0.0</p>
+
+    <script src="/assets/jquery/jquery-2.1.1.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
