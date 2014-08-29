@@ -1,0 +1,23 @@
+{
+  "name": "NuGet.Schema",
+  "version": "0.1.0",
+  "homepage": "https://github.com/NuGet/NuGet.Schema",
+  "description": "NuGet Schema Browser",
+  "authors": [
+    "NuGet Team <support@nuget.org>"
+  ],
+  "license": "Apache 2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.23",
+    "bootstrap": "~3.2.0",
+    "requirejs": "~2.1.14"
+  }
+}
