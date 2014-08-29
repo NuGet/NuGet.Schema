@@ -1,0 +1,57 @@
+{
+    "@id": "http://schema.nuget.org/schema#",
+    "@type": "owl:Ontology",
+    "rdfs:label": "NuGet Core Schema",
+    "definitions": [
+        {
+            "@id": "nuget:id",
+            "@type": "owl:DatatypeProperty",
+            "domain": "nuget:PackageRegistration",
+            "range": "xsd:string"
+        },
+        {
+            "@id": "nuget:version",
+            "@type": "owl:DatatypeProperty",
+            "domain": "nuget:Package",
+            "range": "nuget:SemanticVersion"
+        },
+        {
+            "@id": "nuget:PackageRegistration",
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "nuget:Package",
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "nuget:SemanticVersion",
+            "@type": "owl:Class",
+            "base": "xsd:string"
+        }
+    ],
+    "@context": {
+        "@vocab": "http://schema.nuget.org/schema#",
+        "nuget": "http://schema.nuget.org/schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+
+        "definitions": {
+            "@reverse": "rdfs:isDefinedBy"
+        },
+        "domain": {
+            "@id": "rdfs:domain",
+            "@type": "@id"
+        },
+        "range": {
+            "@id": "rdfs:range",
+            "@type": "@id"
+        },
+        "base": {
+            "@id": "rdfs:subClassOf",
+            "@type": "@id"
+        }
+    }
+}
